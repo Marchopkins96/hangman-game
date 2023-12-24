@@ -114,7 +114,7 @@ def start_hangman_game():
     """
     while True:
         if chances == 0:
-            print(f"Sorry! You Lost, the word was: {word}")
+            print(f"Sorry! {player_name} You Lost, the word was: {word}")
             print("Better luck next time!")
             break
 
@@ -122,10 +122,10 @@ def start_hangman_game():
         print(temp, end='')
         print(f"\t(word has {len(word)} letters)")
         print(f"Chances left: {chances}")
-        character = input("Enter the character you think the word may have: ")
+        character = input(f"{player_name} Enter the character you think the word may have: ")
 
         if len(character) > 1 or not character.isalpha():
-            print("Please enter a single letter only\n")
+            print("Please enter a single letter only")
             continue
         else:
             for num, char in enumerate(list(word)):
@@ -140,7 +140,7 @@ def start_hangman_game():
         else:
             chances -= 1
         if '_' not in temp:
-            print(f"\nYou Won! The word was: {word}")
+            print(f"\n{player_name} You Won! The word was: {word}")
             print(f"You got it in {7 - chances} guesses")
             break
         else:
@@ -149,9 +149,10 @@ def start_hangman_game():
         print()
 
 print("==== WELCOME TO THE HANGMAN GAME ====")
+player_name = input("Please enter your name: \n")
 
 while True:
-    choice = input("Do you want to play hangman? (yes/no): ")
+    choice = input(f"{player_name} Do you want to play hangman? (yes/no): ")
 
     if 'yes' in choice.lower():
         start_hangman_game()
