@@ -97,3 +97,16 @@ def displayBoard(hang, missedLetters, correctLetters, secretWord):
     for letter in blanks:  #show the secret word with spaces in between each letter
         print(letter, end=' ')
 
+def get_guess(alreadyGuessed):
+    while True:
+        guess = input('Guess a letter: ')
+        guess = guess.lower()
+        if len(guess) != 1:
+            print('Please enter a single letter.')
+        elif guess in alreadyGuessed:
+            print('You have already guessed that letter. Choose again!')
+        elif guess not in 'abcdefghijklmnopqrstuvwxyz':
+            print('Please enter a letter.')
+        else:
+            return guess
+
