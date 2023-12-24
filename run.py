@@ -148,7 +148,7 @@ def start_hangman_game():
 
         print()
 
-def display_game()
+def display_game():
     print("==== WELCOME TO THE HANGMAN GAME ====")
 
     while True:
