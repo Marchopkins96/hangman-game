@@ -91,3 +91,60 @@ def draw_hangman(chances):
         print("| /|\ ")
         print("| / \ ")
         print("| ")
+
+def start_hangman_game():
+    """
+    This function defines the main logic of the program
+    """
+    word = get_random_words_from_wordlist()
+    temp = get_some_letters(word)
+    chances = 7
+    found = False
+
+    """
+    This loop terminates when the user guesses the word correctly or runs out of chances.
+    Begin the game by displaying the sequence, the number of letters in the word,
+    and the chances left. User choice will be validated to check a character is
+    in the alphabet.
+    """
+    """
+    If there are no blank dashes left, display that the
+    user won along with the number of guesses taken otherwise
+    display the hangman in relation to the amount of chances left.
+    """
+    while True:
+        if chances == 0:
+            print(f"Sorry! You Lost, the word was: {word}")
+            print("Better luck next time!")
+            break
+
+        print("=== Guess the word ===")
+        print(temp, end='')
+        print(f"\t(word has {len(word)} letters)")
+        print(f"Chances left: {chances}")
+        character = input("Enter the character you think the word may have: ")
+
+        if len(character) > 1 or not character.isalpha():
+            print("Please enter a single alphabet only")
+            continue
+        else:
+            for num, char in enumerate(list(word)):
+                if char == character:
+                    templist = list(temp)
+                    templist[num] = char
+                    temp = ''.join(templist)
+                    found = True
+        
+        if found:
+            found = False
+        else:
+            chances -= 1
+        if '_' not in temp:
+            print(f"\nYou Won! The word was: {word}")
+            print(f"You got it in {7 - chances} guess")
+            break
+        else:
+            draw_hangman(chances)
+
+        print()
+
