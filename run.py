@@ -148,17 +148,16 @@ def start_hangman_game():
 
         print()
 
-def display_game():
-    print("==== WELCOME TO THE HANGMAN GAME ====")
+print("==== WELCOME TO THE HANGMAN GAME ====")
 
-    while True:
-        choice = input("Do you want to play hangman? (yes/no): ")
+while True:
+    choice = input("Do you want to play hangman? (yes/no): ")
 
-        if 'yes' in choice.lower():
-            start_hangman_game()
-        elif 'no' in choice.lower():
-            print('Quitting the game...')
-            break
-        else:
-            print("Please enter a valid choice.")
-        print("\n")
+    if 'yes' in choice.lower():
+        start_hangman_game()
+    elif 'no' in choice.lower():
+        print('Quitting the game...')
+        break
+    else:
+        print("Please enter a valid choice.")
+    print("\n")
