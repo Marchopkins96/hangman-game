@@ -125,7 +125,7 @@ def start_hangman_game():
         character = input("Enter the character you think the word may have: ")
 
         if len(character) > 1 or not character.isalpha():
-            print("Please enter a single alphabet only")
+            print("Please enter a single letter only\n")
             continue
         else:
             for num, char in enumerate(list(word)):
@@ -141,7 +141,7 @@ def start_hangman_game():
             chances -= 1
         if '_' not in temp:
             print(f"\nYou Won! The word was: {word}")
-            print(f"You got it in {7 - chances} guess")
+            print(f"You got it in {7 - chances} guesses")
             break
         else:
             draw_hangman(chances)
