@@ -25,5 +25,24 @@ def welcome():
         name = input('Enter a game name here: ')
         print('Hi',name,'Please go through the rules of the game below')
 
+#define a play again function
+def play_again():
+
+    """
+    This function asks the user if they wish to play the game again
+    """
+    response = input("Would you like to play again? yes/no. Enter 'Y' for Yes or 'N' for No: ").lower()
+    reply = ('y', 'n')
+
+    if response not in reply:
+        print('Invalid Entry! Please check that you entered the correct input: ')
+        response = input("Please enter the correct input here. Either yes/no. Enter 'Y' for Yes or 'N' for No: ").lower()
+
+    else:
+        if response == 'y':
+            game_run()
+
+        elif response == 'n':
+            print('Hope you had fun playing the game! Come back soon!')
 
     
