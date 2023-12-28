@@ -142,7 +142,7 @@ def play_game():
     #This function displays the hangman image to the user
 
     def hangman(tries):
-    stages = [  """
+        stages = [  """
                    --------
                    |      |
                    |      O
