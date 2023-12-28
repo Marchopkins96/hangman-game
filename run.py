@@ -111,7 +111,7 @@ def getGuess(alreadyGuessed):
             return guess
 
 def playAgain():
-   return input("\nDo you want to play again? ").lower().startswith('y')
+   return input("\nDo you want to play again? (y/n)").lower().startswith('y')
 
 missedLetters = ''
 correctLetters = ''
@@ -156,6 +156,3 @@ while True:
             secretWord = get_random_word_list()
         else: 
             break
-
-
-
