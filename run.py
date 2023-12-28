@@ -60,3 +60,19 @@ def welcome():
         print('Please enter your name using letters only')
         name = input('Enter a game name here: ')
         print('Hi',name,'Please go through the rules of the game below')
+
+
+def play_again():
+    """
+    This function allows the user the option to play again if they wish
+    """
+    while True:
+        choice = input("Do you wanna play hangman? (yes/no): ")
+        if 'yes' in choice.lower():
+            start_hangman_game()
+        elif 'no' in choice.lower():
+            print('Quitting the game...')
+            break
+        else:
+            print("Please enter a valid choice.")
+        print("\n")
