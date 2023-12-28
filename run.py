@@ -27,3 +27,12 @@ def get_some_letters(word):
             templist[num] = char
             temp = ''.join(templist)
     return temp
+
+def getAvailableLetters(letters_guessed):
+    #list of letters a guess can be
+    alph = "abcdefghijklmnopqrstuvwxyz"
+    r = ""
+    for i in alph:
+        if i not in lettersGuessed:
+            r = r+i
+    return(r)
