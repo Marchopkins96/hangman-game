@@ -5,9 +5,9 @@ def welcome():
 
     name = input("""
     
-                ============================================================
+        ============================================================
                 
-                > Welcome to the Hangman Game! Please enter your game name:  <
+        > Welcome to the Hangman Game! Please enter your game name:  <
                 """).capitalize()
 
     if name.isalpha() == True:
@@ -40,7 +40,7 @@ def play_again():
 
     else:
         if response == 'y':
-            game_run()
+            play_game()
 
         elif response == 'n':
             print('Hope you had fun playing the game! Come back soon!')
@@ -141,8 +141,8 @@ def play_game():
 
     #This function displays the hangman image to the user
 
-    def hangman(tries):
-        stages = [  """
+def hangman(tries):
+    stages = [  """
                    --------
                    |      |
                    |      O
@@ -208,4 +208,5 @@ def play_game():
     ]
     return stages[tries]
 #Full program run
-play_game()()
+play_game()
+
