@@ -117,7 +117,7 @@ def play_game():
             tries -=1
 
         status = ''
-        if guessed == False
+        if guessed == False:
             for letter in word:
                 if letter in letters_guessed:
                     status += letter
