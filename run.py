@@ -45,4 +45,14 @@ def play_again():
         elif response == 'n':
             print('Hope you had fun playing the game! Come back soon!')
 
-    
+def get_word():
+    """
+    This function generates the word from 'wordlist.txt' that the user will attempt to guess.
+    """
+        wordlist = []
+    with open("hangman_wordlist.txt", 'r') as file:
+        wordlist = file.read().split('\n')
+    word = random.choice(wordlist)
+    return word
+
+   
