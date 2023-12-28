@@ -11,7 +11,7 @@ def get_random_word_from_wordlist():
     return word
 
 def get_some_letters(word):
-     """
+    """
     This function takes the randomly selected word as the parameter.
     A sequence of dashes (_) and some letters will be displayed to the user.
     """
