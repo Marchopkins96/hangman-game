@@ -139,6 +139,73 @@ def play_game():
     #call play_again function if user wishes to do so
     play_again()
 
-    
-           
-                
+    #This function displays the hangman image to the user
+
+    def hangman(tries):
+    stages = [  """
+                   --------
+                   |      |
+                   |      O
+                   |     \|/
+                   |      |
+                   |     / \
+                   -
+                   """,
+                   """
+                   --------
+                   |      |
+                   |      O
+                   |     \|/
+                   |      |
+                   |     /
+                   -
+                   """,
+                   """
+                   --------
+                   |      |
+                   |      O
+                   |     \|/
+                   |      |
+                   |
+                   -
+                   """,
+                   """
+                   --------
+                   |      |
+                   |      O
+                   |     \|
+                   |      |
+                   |
+                   -
+                   """,
+                   """
+                   --------
+                   |      |
+                   |      O
+                   |      |
+                   |      |
+                   |
+                   -
+                   """,
+                   """
+                   --------
+                   |      |
+                   |      O
+                   |
+                   |
+                   |
+                   -
+                   """,
+                   """
+                   --------
+                   |      |
+                   |      
+                   |
+                   |
+                   |
+                   -
+                   """
+    ]
+    return stages[tries]
+#Full program run
+play_game()()
