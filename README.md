@@ -58,4 +58,42 @@ At the initial stage the game will present a welcome message and invite a user t
 
 In the future it would enhance the experience of the game if the user had a choice of level that they could pick. Each level would include different lengths of words designed to test the user based on their ability and provide more of a challenge.
 
+### Game Features
+
+#### Welcome to the game 
+
+<details>
+<summary>Screenshot of Welcome to game section</summary>
+<img src="docs/startofgame.png" width="700">
+</details>
+
+- Features a welcome message and invites a user to input a game name.
+
+#### Instructions 
+
+<details>
+<summary>Screenshot of instructions</summary>
+<img src="docs/instructions.png" width="700">
+</details>
+
+- When a name is inputted then the instructions show and wish the user good luck. Further down the screen a user can input their guess.
+
+#### User name saved 
+
+<details>
+<summary>Screenshot of saved user name</summary>
+<img src="docs/namesave.png" width="700">
+</details>
+ 
+- The users name is saved when they input it. This makes the game more personal for users.
+
+#### Wrong letter input
+
+<details>
+<summary>Screenshot of wrong letter feedback</summary>
+<img src="docs/wrongletter.png" width="700">
+</details>
+
+- The user recieves instant feedback when a character that isnt in the random word is inputted.
+- This happens in the form of a textual message and the hangman image parts appearing.
 
