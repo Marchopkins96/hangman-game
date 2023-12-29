@@ -39,7 +39,7 @@ In this version a user is prompted to enter their game name, once they have done
 #### User Stories
 
 ##### Game Users
-As a first time user, I want to ...
+As a game user, I want to ...
 1. ... easily navigate through the game.
 2. ... get clear feedback whilst playing.
 3. ... easily return to the beginning of the game and play again.
@@ -47,3 +47,15 @@ As a first time user, I want to ...
 ##### Game owner
 As the game owner, I want to ...
 1. ... interact with the game, stay engaged and be challenged.
+
+### Scope 
+
+#### Initial Stage
+
+At the initial stage the game will present a welcome message and invite a user to enter their name, then display short instructions before a guess can be made by the user. If a user guesses the word with a set amount of guesses they are informed they won and if not they are told that they lose. At the end of a game the user can choose to play again or not.
+
+#### Future Additions 
+
+In the future it would enhance the experience of the game if the user had a choice of level that they could pick. Each level would include different lengths of words designed to test the user based on their ability and provide more of a challenge.
+
+
