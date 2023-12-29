@@ -97,3 +97,43 @@ In the future it would enhance the experience of the game if the user had a choi
 - The user recieves instant feedback when a character that isnt in the random word is inputted.
 - This happens in the form of a textual message and the hangman image parts appearing.
 
+#### Lost Game
+
+<details>
+<summary>Screenshot of a lost game</summary>
+<img src="docs/playagain.png" width="700">
+</details>
+
+- The user is told they lose the game and the full hangman is presented on screen.
+- The option to play again is available to the user.
+
+#### Won Game
+
+<details>
+<summary>Screenshot of a Winning game</summary>
+<img src="docs/youwon.png" width="700">
+</details>
+
+- The user is told they won the game and that isstantly ends the game loop.
+- The option to play again is again presnted to the user.
+
+#### Restart Game
+
+<details>
+<summary>Screenshot of a restarted game</summary>
+<img src="docs/restartgame.png" width="700">
+</details>
+
+- If a user chooses the yes option they are taken back to the very start of the game so they can play again.
+
+#### Quit Game
+
+<details>
+<summary>Screenshot of a quit game</summary>
+<img src="docs/restartgame.png" width="700">
+</details>
+
+- If the user chooses the no option they quit the game and a message is presented on screen to tell the user.
+
+
+
