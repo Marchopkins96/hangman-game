@@ -52,8 +52,7 @@ def welcome():
                     The computer will randomly choose a word and 
                     you will have to try and guess what the word is!
                     You will have 7 chances to guess the random word by
-                    either entering a single character or guessing the whole
-                    word if you are feeling brave!
+                    entering a single character each guess.
                     ==================================================
                     
                     Good Luck! Have fun playing :)))""")
@@ -147,7 +146,7 @@ def start_hangman_game():
     found = False
     while True:
         if chances == 0:
-            print(f"Sorry! You Lost, the word was: {word}\n")
+            print(f"$Sorry! You Lost, the word was: {word}\n")
 
             print("""
             Better luck next time
@@ -155,16 +154,16 @@ def start_hangman_game():
             break
         print("=== Guess the word ===")
         print(temp, end='')
-        print(f"\t(word has {len(word)} letters)")
-        print(f"Chances left: {chances}")
-        character = input("Enter the character you think the word may have: ")
+        print(f"$\t(word has {len(word)} letters)")
+        print(f"$Chances left: {chances}")
+        character = input("$Enter the character you think the word may have: ")
         if len(character) > 1 or not character.isalpha():
-            print("Please enter a single alphabet only")
+            print("$Please enter a single alphabet only")
             continue
         elif character in letters_guessed:
-            print('You have already guessed that letter before.Try again!')
+            print('$You have already guessed that letter before.Try again!')
         elif character not in word:
-                print('Sorry, that letter is not part of the word.')
+                print('$Sorry, that letter is not part of the word.')
                 letters_guessed.append(character)
         else:
             for num, char in enumerate(list(word)):
@@ -178,8 +177,8 @@ def start_hangman_game():
         else:
             chances -= 1
         if '_' not in temp:
-            print(f"\nYou Won! The word was: {word}")
-            print(f"You got it in {7 - chances} guess")
+            print(f"$\nYou Won! The word was: {word}")
+            print(f"$You got it in {7 - chances} guess")
             break
         else:
             draw_hangman(chances)
