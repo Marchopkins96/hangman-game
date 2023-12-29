@@ -29,38 +29,37 @@ def get_some_letters(word):
     return temp
 
 def getAvailableLetters(letters_guessed):
-    #list of letters a guess can be
+    # list of letters a guess can be
     alph = "abcdefghijklmnopqrstuvwxyz"
     r = ""
     for i in alph:
         if i not in lettersGuessed:
             r = r+i
-    return(r)
+    return (r)
 
 def welcome():
-    #This function welcomes the user to the game and asks for input from them
+    # This function welcomes the user to the game and asks for input from them
     name = input("""
-    
-        ============================================================
-                
+          ============================================================
+
         > Welcome to the Hangman Game! Please enter your game name:  <
         """).capitalize()
 
-    if name.isalpha() == True:
-        print(""">> Hi!""",name,"""Glad you could be here! <<<
+    if name.isalpha():
+        print(""">> Hi!""", name, """Glad you could be here! <<<
                     You will be playing against the computer today.
-                    The computer will randomly choose a word and 
+                    The computer will randomly choose a word and
                     you will have to try and guess what the word is!
                     You will have 7 chances to guess the random word by
                     entering a single character each guess.
                     ==================================================
-                    
+
                     Good Luck! Have fun playing :)))""")
 
     else:
         print('Please enter your name using letters only')
         name = input('Enter a game name here: ')
-        print('Hi',name,'Please go through the rules of the game below')
+        print('Hi', name, 'Please go through the rules of the game below')
 
 
 def play_again():
@@ -78,7 +77,7 @@ def play_again():
             print("Please enter a valid choice.")
         print("\n")
 
-#The following function stores the imagery for the hangman visual
+# The following function stores the imagery for the hangman visual
 def draw_hangman(chances):
     if chances == 6:
         print("________      ")
@@ -133,11 +132,11 @@ def draw_hangman(chances):
 def start_hangman_game():
 
     """
-    This function starts the game for the user. If a users input is incorrect 
+    This function starts the game for the user. If a users input is incorrect
     they will lose a chance to guess again. The user is also told if they
-    have already guessed a letter and if they are trying to guess an invalid character.
+    have already guessed a letter.
     """
-    
+
     welcome()
     word = get_random_word_from_wordlist()
     temp = get_some_letters(word)
@@ -163,8 +162,8 @@ def start_hangman_game():
         elif character in letters_guessed:
             print('$You have already guessed that letter before.Try again!')
         elif character not in word:
-                print('$Sorry, that letter is not part of the word.Try again!')
-                letters_guessed.append(character)
+            print('$Sorry, that letter is not part of the word.Try again!')
+            letters_guessed.append(character)
         else:
             for num, char in enumerate(list(word)):
                 if char == character:
@@ -184,6 +183,6 @@ def start_hangman_game():
             draw_hangman(chances)
         print()
 
-#full program run    
+
 start_hangman_game()
 play_again()

@@ -130,10 +130,31 @@ In the future it would enhance the experience of the game if the user had a choi
 
 <details>
 <summary>Screenshot of a quit game</summary>
-<img src="docs/restartgame.png" width="700">
+<img src="docs/quitgame.png" width="700">
 </details>
 
 - If the user chooses the no option they quit the game and a message is presented on screen to tell the user.
+
+## Technologies Used
+
+### Languages
+- Python
+
+### Tools 
+- Git
+- Github
+- Render
+
+### Helpful sites
+
+A few sites came in handy when developing my own version of this game:
+
+- <a href="https://www.w3schools.com/">W3 Schools</a>
+- <a href="https://gist.github.com/">GitHub Gist<a>
+
+## Testing and Validation
+
+### PEP8 CI Python Linter
 
 
 
