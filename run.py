@@ -148,7 +148,7 @@ def start_hangman_game():
         if chances == 0:
             print(f"$Sorry! You Lost, the word was: {word}\n")
 
-            print("""
+            print(f"""
             Better luck next time
             ======================""")
             break
