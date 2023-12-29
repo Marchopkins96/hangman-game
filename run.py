@@ -51,7 +51,9 @@ def welcome():
                     You will be playing against the computer today.
                     The computer will randomly choose a word and 
                     you will have to try and guess what the word is!
-                    
+                    You will have 7 chances to guess the random word by
+                    either entering a single character or guessing the whole
+                    word if you are feeling brave!
                     ==================================================
                     
                     Good Luck! Have fun playing :)))""")
@@ -67,7 +69,7 @@ def play_again():
     This function allows the user the option to play again if they wish
     """
     while True:
-        choice = input("Do you wanna play hangman? (yes/no): ")
+        choice = input("Do you want play hangman again? (yes/no): ")
         if 'yes' in choice.lower():
             start_hangman_game()
         elif 'no' in choice.lower():
