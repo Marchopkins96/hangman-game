@@ -154,7 +154,7 @@ def start_hangman_game():
             break
         print("=== Guess the word ===")
         print(temp, end='')
-        print(f"$\t(word has {len(word)} letters)")
+        print(f"\t(word has {len(word)} letters)")
         print(f"$Chances left: {chances}")
         character = input("$Enter the character you think the word may have: ")
         if len(character) > 1 or not character.isalpha():
@@ -163,7 +163,7 @@ def start_hangman_game():
         elif character in letters_guessed:
             print('$You have already guessed that letter before.Try again!')
         elif character not in word:
-                print('$Sorry, that letter is not part of the word.')
+                print('$Sorry, that letter is not part of the word.Try again!')
                 letters_guessed.append(character)
         else:
             for num, char in enumerate(list(word)):
