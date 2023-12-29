@@ -156,5 +156,9 @@ A few sites came in handy when developing my own version of this game:
 
 ### PEP8 CI Python Linter
 
+- No errors are flagged when testing the python code from run.py in the PEP8 CI Python Linter.
+
+![Python Testing](docs/pythonlinter.png)
+
 
 

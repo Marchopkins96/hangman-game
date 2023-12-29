@@ -1,6 +1,8 @@
 import random
 
+
 def get_random_word_from_wordlist():
+
     """
     This function generates a random word from the wordlist file
     """
@@ -10,7 +12,9 @@ def get_random_word_from_wordlist():
     word = random.choice(wordlist)
     return word
 
+
 def get_some_letters(word):
+
     """
     This function takes the randomly selected word as the parameter.
     A sequence of dashes (_) and some letters will be displayed to the user.
@@ -28,6 +32,7 @@ def get_some_letters(word):
             temp = ''.join(templist)
     return temp
 
+
 def getAvailableLetters(letters_guessed):
     # list of letters a guess can be
     alph = "abcdefghijklmnopqrstuvwxyz"
@@ -36,6 +41,7 @@ def getAvailableLetters(letters_guessed):
         if i not in lettersGuessed:
             r = r+i
     return (r)
+
 
 def welcome():
     # This function welcomes the user to the game and asks for input from them
@@ -77,6 +83,7 @@ def play_again():
             print("Please enter a valid choice.")
         print("\n")
 
+
 # The following function stores the imagery for the hangman visual
 def draw_hangman(chances):
     if chances == 6:
@@ -111,23 +118,24 @@ def draw_hangman(chances):
         print("________      ")
         print("|      |      ")
         print("|      0      ")
-        print("|     /|\     ")
+        print("|     /|\\     ")
         print("|             ")
         print("|             ")
     elif chances == 1:
         print("________      ")
         print("|      |      ")
         print("|      0      ")
-        print("|     /|\     ")
+        print("|     /|\\    ")
         print("|     /       ")
         print("|             ")
     elif chances == 0:
         print("________      ")
         print("|      |      ")
         print("|      0      ")
-        print("|     /|\     ")
-        print("|     / \     ")
+        print("|     /|\\    ")
+        print("|     / \\    ")
         print("|             ")
+
 
 def start_hangman_game():
 
