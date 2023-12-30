@@ -177,32 +177,54 @@ There are currently no outstnading issues at this time to the developers knowled
 
 ** As a game user, I want to ...**
 1. ... Be able to enter a game name.
-| **Feature** | **Action** | **Expected result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-| Pre game page | Enter game name | Game name is saved and the game loads | Works as expected |
 
-2. ... Read how to play the game. 
 | **Feature** | **Action** | **Expected result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Game terminal | Press enter after entering game name | user is welcomed to game and instructions on how to play are shown | Works as expected |
+| Game Terminal | Enter game name | Game name is saved and the game loads | Works as expected |
+
+2. ... Read how to play the game.
+
+| **Feature** | **Action** | **Expected result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game Terminal | Press enter after entering game name | user is welcomed to game and instructions on how to play are shown | Works as expected |
 
 3. ... Easily submit a guess in the game.
+
 | **Feature** | **Action** | **Expected result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Game Terminal | Enter guess after 'Enter the character you think the word may have' and press enter | guess is submitted and the program tells a user if the guess is in the word or not | Works as expected |
 
 4. ... See progress throughout game.
+
 | **Feature** | **Action** | **Expected result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Game terminal | A user enters a guess | After each guess a user takes it will either be part of the random word to guess or it will not and the hangman image will display more parts each time a wrong guess is submitted | Works as expected | 
+| Game Terminal | A user enters a guess | After each guess a user takes it will either be part of the random word to guess or it will not and the hangman image will display more parts each time a wrong guess is submitted | Works as expected | 
 
-5. ... Be able to play again. 
+5. ... Be able to play again.
+
 | **Feature** | **Action** | **Expected result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 | Game Terminal | Press 'yes' to 'Do you want to play again' | User is taken back to the very start of the game and can play again | Works as expected | 
 
 6. ... Be able to quit the game.
+
 | **Feature** | **Action** | **Expected result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-| Game terminal | Press 'no' to 'Do you want to play again' | The game is quit in the terminal and a message is presented to the user to tell them | Works as expected |
+| Game Terminal | Press 'no' to 'Do you want to play again' | The game is quit in the terminal and a message is presented to the user to tell them | Works as expected |
+
+
+** As the game owner, I want to ...**
+1. ...Create a game that is easy to use.
+
+| **Feature** | **Action** | **Expected result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game Terminal | Enter guesses | Guesses are executed and game goes through motions | Works as expected |
+
+2. ...Provide instructions for the game.
+
+| **Feature** | **Action** | **Expected result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+| Game Terminal | enter game name | Instructions display with welcome message | Works as expected |
+
+
 
