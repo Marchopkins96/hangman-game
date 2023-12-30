@@ -226,5 +226,13 @@ There are currently no outstnading issues at this time to the developers knowled
 |-------------|------------|---------------------|-------------------|
 | Game Terminal | enter game name | Instructions display with welcome message | Works as expected |
 
+## Bugs and Fixes
+
+| **Bug** | **Fix** |
+| ---------- | ---------- |
+| When running my code through the CI Python Linter Validator a number of 'Invalid escape sequence '\' errors flagged up. These errors related to the code within function draw_hangman() which stores the code for the hangman imagery that is displayed in the game terminal. | In order to fix these errors an addition '\' was added after each '\' in this function to fix the issue and eliminate the errors. |
+
+
+
 
 
