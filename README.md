@@ -230,7 +230,49 @@ There are currently no outstnading issues at this time to the developers knowled
 
 | **Bug** | **Fix** |
 | -------------- | -------------- |
-| When running my code through the CI Python Linter Validator a number of 'Invalid escape sequence \ errors flagged up. These errors related to the code within function draw_hangman() which stores the code for the hangman imagery that is displayed in the game terminal. | In order to fix these errors an addition \ was added after each \ in this function to fix the issue and eliminate the errors. |
+| When running my code through the CI Python Linter Validator a number of 'Invalid escape sequence \ errors flagged up. These errors related to the code within function draw_hangman() which stores the code for the hangman imagery that is displayed in the game terminal. | In order to fix these errors an additional \ was added after each \ in this function to fix the issue and eliminate the errors. |
+
+## Deployment & Development 
+
+This project was deployed on Render. The instructions provided on Slack channel 'render' were used to ensure this project was deployed correctly and that all correct steps were taken. 
+The link to these instructions on how to deploy on Render are as follows:
+- <a href="https://code-institute-students.github.io/deployment-docs/10-pp3/pp3-01-web-service-creation">Render Deployment<a>
+
+The project can be forked by the following steps:
+
+1. Go to the GitHub repository.
+2. Click on the fork button in the upper right hand corner.
+
+The repository can be cloned by the following steps:
+
+1. Got to the GitHub repository.
+2. Locade the Code button above the list of files and click on it.
+3. Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard.
+4. Open Git Bash.
+5. Change the current working directory to the one where you want the cloned directory.
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7. Press Enter to create your local clone.
+
+## Credits 
+
+### Code 
+
+Resources and insiration came from the following sources:
+
+- The layout and set up of the game were modelled on a couple of different code sources that i found on GitHub.
+- These sources helped me visualise what the game could look like and what features it should include.
+
+The code sources are as follows:
+[Code Inspiration](https://github.com/Prithivee7/Hangman/blob/main/play_hangman.py)
+[Code Insiration 2](https://github.com/makeuseofcode/Hangman-Game/blob/main/hangman.py)
+
+### Acknowledgements 
+
+I would like to thank:
+
+- My mentor Mitko Bachvarov for his Feedback, advice and guidance throughout this project.
+- Members of the Slack community who answered my questions & queries.
+- My partner, Harriet, for her feedback and encouragement throughout.
 
 
 
