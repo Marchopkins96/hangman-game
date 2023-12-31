@@ -87,6 +87,15 @@ In the future it would enhance the experience of the game if the user had a choi
  
 - The users name is saved when they input it. This makes the game more personal for users.
 
+#### Correct letter input
+
+<details>
+<summary>Screenshot of correct letter feedback</summary>
+<img src="docs/correctletter.png" width="700">
+</details>
+
+- The user recieves instant feedback when a character that is in the random word is inputted.
+
 #### Wrong letter input
 
 <details>
