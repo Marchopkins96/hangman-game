@@ -180,7 +180,7 @@ Both of the above tests return the developers desired result.
 
 #### Outstanding Issues 
 
-There are currently no outstnading issues at this time to the developers knowledge.
+There are currently no outstanading issues at this time to the developers knowledge.
 
 ### Testing User Stories
 
