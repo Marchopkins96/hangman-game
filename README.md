@@ -263,8 +263,8 @@ Resources and insiration came from the following sources:
 - These sources helped me visualise what the game could look like and what features it should include.
 
 The code sources are as follows:
-[Code Inspiration](https://github.com/Prithivee7/Hangman/blob/main/play_hangman.py)
-[Code Insiration 2](https://github.com/makeuseofcode/Hangman-Game/blob/main/hangman.py)
+- [Code Inspiration](https://github.com/Prithivee7/Hangman/blob/main/play_hangman.py)
+- [Code Insiration 2](https://github.com/makeuseofcode/Hangman-Game/blob/main/hangman.py)
 
 ### Acknowledgements 
 
