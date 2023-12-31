@@ -179,6 +179,7 @@ def start_hangman_game():
                     templist[num] = char
                     temp = ''.join(templist)
                     found = True
+                    print('$Great job, that letter is in the word!')
         if found:
             found = False
         else:
